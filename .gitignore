@@ -135,7 +135,8 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env
+# discarding .env for cloning and testing the project..
+#.env
 .envrc
 .venv
 env/
