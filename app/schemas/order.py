@@ -25,3 +25,6 @@ class Order(BaseModel):
     
     class Config:
         from_attributes = True
+
+class OrderUpdate(BaseModel):
+    status: Optional[str] = None

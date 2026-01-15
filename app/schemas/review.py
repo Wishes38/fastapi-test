@@ -1,4 +1,5 @@
 from pydantic import BaseModel
+from typing import Optional
 
 class ReviewBase(BaseModel):
     rating: int
@@ -14,3 +15,7 @@ class Review(ReviewBase):
     
     class Config:
         from_attributes = True
+
+class ReviewUpdate(BaseModel):
+    rating: Optional[int] = None
+    comment: Optional[str] = None

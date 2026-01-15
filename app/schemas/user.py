@@ -13,3 +13,7 @@ class User(UserBase):
     
     class Config:
         from_attributes = True
+
+class UserUpdate(BaseModel):
+    is_active: Optional[bool] = None
+    email: Optional[EmailStr] = None

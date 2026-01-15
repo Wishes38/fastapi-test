@@ -1,5 +1,5 @@
-from .user import User, UserCreate
-from .category import Category, CategoryCreate
-from .product import Product, ProductCreate
-from .order import Order, OrderCreate, OrderItem, OrderItemBase
-from .review import Review, ReviewCreate
+from .user import User, UserCreate, UserUpdate
+from .category import Category, CategoryCreate, CategoryUpdate
+from .product import Product, ProductCreate, ProductUpdate
+from .order import Order, OrderCreate, OrderItem, OrderItemBase, OrderUpdate
+from .review import Review, ReviewCreate, ReviewUpdate
