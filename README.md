@@ -44,7 +44,17 @@ python -m venv venv
 python3 -m venv venv
 source venv/bin/activate
 ```
-2. Gereksinimleri Yükleyin
+Eğer şu hatayı alırsanız: 
+```bash
+venv\Scripts\
+Activate.ps1 cannot be loaded because running scripts is disabled on this system.
+```
+Aşağıdaki kodu çalıştırın
+```bash
+Set-ExecutionPolicy Unrestricted -Scope Process
+.\venv\Scripts\activate
+```
+Gereksinimleri Yükleyin
 ```bash
 pip install -r requirements.txt
 ```
